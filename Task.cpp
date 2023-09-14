@@ -29,4 +29,21 @@ public:
         z = z_start;
         direction = dir_start;
     }
+
+    // Function for forward movement
+    void fwd_move()
+    {
+        if (direction == 'N')
+            y++;
+        else if (direction == 'S')
+            y--;
+        else if (direction == 'E')
+            x++;
+        else if (direction == 'W')
+            x--;
+        else if (direction == 'U')
+            z++;
+        else if (direction == 'D')
+            z--;
+    }
 };
