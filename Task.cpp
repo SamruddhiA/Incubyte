@@ -46,4 +46,21 @@ public:
         else if (direction == 'D')
             z--;
     }
+
+    // Function for backward movement
+    void backwd_move()
+    {
+        if (direction == 'N')
+            y--;
+        else if (direction == 'S')
+            y++;
+        else if (direction == 'E')
+            x--;
+        else if (direction == 'W')
+            x++;
+        else if (direction == 'U')
+            z--;
+        else if (direction == 'D')
+            z++;
+    }
 };
