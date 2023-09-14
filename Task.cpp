@@ -15,9 +15,18 @@ private:
     char direction;
     /* N North,
      S South,
-     E East,
-     W West,
-     U Up,
-     D Down
+    E East,
+    W West,
+    U Up,
+    D Down
     */
+
+public:
+    ISRO(int x_start, int y_start, int z_start, char dir_start)
+    {
+        x = x_start;
+        y = y_start;
+        z = z_start;
+        direction = dir_start;
+    }
 };
