@@ -90,7 +90,7 @@ public:
             direction = 'S';
     }
 
-    // Function for moving up
+    // Function for moving down
     void down()
     {
         if (direction == 'N' || direction == 'S')
@@ -99,5 +99,16 @@ public:
             direction = 'S';
         else if (direction == 'D')
             direction = 'N';
+    }
+
+    // Function for moving up
+    void up()
+    {
+        if (direction == 'N' || direction == 'S')
+            direction = 'U';
+        else if (direction == 'U')
+            direction = 'N';
+        else if (direction == 'D')
+            direction = 'S';
     }
 };
