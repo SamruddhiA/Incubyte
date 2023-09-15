@@ -63,4 +63,17 @@ public:
         else if (direction == 'D')
             z++;
     }
+
+    // Function for turning right
+    void right_turn()
+    {
+        if (direction == 'N')
+            direction = 'E';
+        else if (direction == 'S')
+            direction = 'W';
+        else if (direction == 'E')
+            direction = 'S';
+        else if (direction == 'W')
+            direction = 'N';
+    }
 };
