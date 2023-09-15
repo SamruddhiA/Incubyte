@@ -76,4 +76,17 @@ public:
         else if (direction == 'W')
             direction = 'N';
     }
+
+    // Function for turning left
+    void left_turn()
+    {
+        if (direction == 'N')
+            direction = 'W';
+        else if (direction == 'S')
+            direction = 'E';
+        else if (direction == 'E')
+            direction = 'N';
+        else if (direction == 'W')
+            direction = 'S';
+    }
 };
