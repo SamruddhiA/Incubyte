@@ -89,4 +89,15 @@ public:
         else if (direction == 'W')
             direction = 'S';
     }
+
+    // Function for moving up
+    void down()
+    {
+        if (direction == 'N' || direction == 'S')
+            direction = 'D';
+        else if (direction == 'U')
+            direction = 'S';
+        else if (direction == 'D')
+            direction = 'N';
+    }
 };
