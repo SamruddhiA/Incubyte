@@ -131,4 +131,11 @@ public:
                 down();
         }
     }
+
+    // Print Function
+    void print()
+    {
+        cout << "Final Position: (" << x << ", " << y << ", " << z << ")" << endl;
+        cout << "Final Direction: " << direction << endl;
+    }
 };
