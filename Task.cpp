@@ -139,3 +139,16 @@ public:
         cout << "Final Direction: " << direction << endl;
     }
 };
+
+int main()
+{
+    int x_start = 0, y_start = 0, z_start = 0;
+    char dir_start = 'N';
+    vector<char> commands = {'f', 'r', 'u', 'b', 'l'};
+
+    ISRO chandrayaan(x_start, y_start, z_start, dir_start);
+    chandrayaan.execute(commands);
+    chandrayaan.print();
+
+    return 0;
+}
