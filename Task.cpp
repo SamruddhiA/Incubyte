@@ -111,4 +111,24 @@ public:
         else if (direction == 'D')
             direction = 'S';
     }
+
+    // Execution function
+    void execute(const vector<char> &cmds)
+    {
+        for (char command : cmds)
+        {
+            if (command == 'f')
+                fwd_move();
+            else if (command == 'b')
+                backwd_move();
+            else if (command == 'l')
+                left_turn();
+            else if (command == 'r')
+                right_turn();
+            else if (command == 'u')
+                up();
+            else if (command == 'd')
+                down();
+        }
+    }
 };
